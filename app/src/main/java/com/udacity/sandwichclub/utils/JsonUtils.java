@@ -13,7 +13,7 @@ import java.util.List;
 
 public class JsonUtils {
 
-    public static final String TAG = "JsonUtils";
+    private static final String TAG = "JsonUtils";
 
     public static Sandwich parseSandwichJson(String json) {
         Log.d(TAG, "parseSandwichJson: " + json);
