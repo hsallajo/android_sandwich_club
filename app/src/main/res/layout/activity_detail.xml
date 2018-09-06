@@ -17,13 +17,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:paddingTop="@dimen/list_vertical_padding">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingBottom="8dp">
 
@@ -34,15 +34,15 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/detail_also_known_as_label"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textSize="@dimen/list_subtitle_textsize" />
 
             <TextView
                 android:id="@+id/also_known_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingBottom="16dp"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/list_tv_bottom_padding"
+                android:textSize="@dimen/list_tv_textsize" />
 
             <TextView
                 android:id="@+id/origin_tv_label"
@@ -51,15 +51,15 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/detail_place_of_origin_label"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textSize="@dimen/list_subtitle_textsize" />
 
             <TextView
                 android:id="@+id/origin_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingBottom="16dp"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/list_tv_bottom_padding"
+                android:textSize="@dimen/list_tv_textsize" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,15 +67,15 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/detail_ingredients_label"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textSize="@dimen/list_subtitle_textsize" />
 
             <TextView
                 android:id="@+id/ingredients_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingBottom="16dp"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/list_tv_bottom_padding"
+                android:textSize="@dimen/list_tv_textsize" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -83,13 +83,13 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/detail_description_label"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textSize="@dimen/list_subtitle_textsize" />
 
             <TextView
                 android:id="@+id/description_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-light"
                 android:textSize="14sp" />
 
         </LinearLayout>
