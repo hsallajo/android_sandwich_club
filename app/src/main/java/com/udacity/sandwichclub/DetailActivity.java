@@ -8,37 +8,42 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.squareup.picasso.Picasso;
 import com.udacity.sandwichclub.model.Sandwich;
 import com.udacity.sandwichclub.utils.JsonUtils;
-
 import java.util.ListIterator;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class DetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_POSITION = "extra_position";
     private static final int DEFAULT_POSITION = -1;
-    public static final String TAG = "DetailActivity";
+
+    @BindView(R.id.image_sandwich) ImageView ingredientsIv;
+    @BindView((R.id.also_known_tv)) TextView alsoKnownTV;
+    @BindView(R.id.also_known_tv_label) TextView alsoKnownTVLabel;
+    @BindView(R.id.origin_tv) TextView placeOfOrigin;
+    @BindView(R.id.origin_tv_label) TextView placeOfOriginLabel;
+    @BindView(R.id.ingredients_tv) TextView incredientsTV;
+    @BindView(R.id.description_tv) TextView description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        ImageView ingredientsIv = findViewById(R.id.image_sandwich);
+        ButterKnife.bind(this);
 
         Intent intent = getIntent();
         if (intent == null) {
-            Log.d(TAG, "Intent has null value");
             closeOnError();
         }
 
         int position = intent.getIntExtra(EXTRA_POSITION, DEFAULT_POSITION);
-        Log.d(TAG, "onCreate position: " + position);
+
         if (position == DEFAULT_POSITION) {
             // EXTRA_POSITION not found in intent
-            Log.d(TAG, "EXTRA_POSITION not found in intent");
             closeOnError();
             return;
         }
@@ -47,7 +52,6 @@ public class DetailActivity extends AppCompatActivity {
         String json = sandwiches[position];
         Sandwich sandwich = JsonUtils.parseSandwichJson(json);
         if (sandwich == null) {
-            Log.d(TAG, "Sandwich data not available.");
             closeOnError();
             return;
         }
@@ -81,8 +85,6 @@ public class DetailActivity extends AppCompatActivity {
             alsoKnown = b.toString();
         }
 
-        TextView alsoKnownTV = findViewById(R.id.also_known_tv);
-        TextView alsoKnownTVLabel = findViewById(R.id.also_known_tv_label);
         if(alsoKnown.equals("")){
             alsoKnownTV.setVisibility(View.GONE);
             alsoKnownTVLabel.setVisibility(View.GONE);
@@ -92,8 +94,6 @@ public class DetailActivity extends AppCompatActivity {
             alsoKnownTV.setText(alsoKnown);
         }
 
-        TextView placeOfOrigin = findViewById(R.id.origin_tv);
-        TextView placeOfOriginLabel = findViewById(R.id.origin_tv_label);
         if(sandwich.getPlaceOfOrigin().equals("")) {
             placeOfOrigin.setVisibility(View.GONE);
             placeOfOriginLabel.setVisibility(View.GONE);
@@ -116,10 +116,8 @@ public class DetailActivity extends AppCompatActivity {
             incredients = incredientsBuilder.toString();
         }
 
-        TextView incredientsTV = findViewById(R.id.ingredients_tv);
         incredientsTV.setText(incredients);
 
-        TextView description = findViewById(R.id.description_tv);
         description.setText(sandwich.getDescription());
     }
 }

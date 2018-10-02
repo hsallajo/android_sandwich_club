@@ -3,20 +3,18 @@ package com.udacity.sandwichclub.utils;
 import android.util.Log;
 
 import com.udacity.sandwichclub.model.Sandwich;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class JsonUtils {
 
-    private static final String TAG = "JsonUtils";
+    private static final String TAG = JsonUtils.class.getSimpleName();
 
     public static Sandwich parseSandwichJson(String json) {
-        Log.d(TAG, "parseSandwichJson: " + json);
+
         Sandwich s = null;
 
         try {
