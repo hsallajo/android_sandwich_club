@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="8dp">
+            android:paddingBottom="@dimen/list_tv_bottom_padding">
 
             <TextView
                 android:id="@+id/also_known_tv_label"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_also_known_as_label"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_subtitle_textsize"
+                android:textSize="@dimen/list_subtitle_text_size"
                 android:textAllCaps="true"
                 />
 
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_tv_textsize"
+                android:textSize="@dimen/list_text_size"
                 android:paddingBottom="@dimen/list_tv_bottom_padding"/>
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_place_of_origin_label"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_subtitle_textsize"
+                android:textSize="@dimen/list_subtitle_text_size"
                 android:textAllCaps="true" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_tv_textsize"
+                android:textSize="@dimen/list_text_size"
                 android:paddingBottom="@dimen/list_tv_bottom_padding"/>
 
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_ingredients_label"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_subtitle_textsize"
+                android:textSize="@dimen/list_subtitle_text_size"
                 android:textAllCaps="true" />
 
             <TextView
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_tv_textsize"
+                android:textSize="@dimen/list_text_size"
                 android:paddingBottom="@dimen/list_tv_bottom_padding"/>
 
             <TextView
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_description_label"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="@dimen/list_subtitle_textsize"
+                android:textSize="@dimen/list_subtitle_text_size"
                 android:textAllCaps="true" />
 
             <TextView
@@ -93,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:textSize="14sp"/>
+                android:textSize="@dimen/body_text_size"/>
 
         </LinearLayout>
 

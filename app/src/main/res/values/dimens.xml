@@ -5,6 +5,9 @@
     <dimen name="list_vertical_padding">16dp</dimen>
     <dimen name="list_horizontal_padding">16dp</dimen>
     <dimen name="list_tv_bottom_padding">16dp</dimen>
-    <dimen name="list_subtitle_textsize">12sp</dimen>
-    <dimen name="list_tv_textsize">16sp</dimen>
+    <dimen name="list_subtitle_text_size">12sp</dimen>
+    <dimen name="list_text_size">16sp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="img_sandwich_height">200dp</dimen>
+    <dimen name="img_sandwich_padding">24dp</dimen>
 </resources>
