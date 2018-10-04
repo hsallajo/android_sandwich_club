@@ -2,12 +2,12 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="list_vertical_padding">16dp</dimen>
-    <dimen name="list_horizontal_padding">16dp</dimen>
-    <dimen name="list_tv_bottom_padding">16dp</dimen>
-    <dimen name="list_subtitle_text_size">12sp</dimen>
-    <dimen name="list_text_size">16sp</dimen>
-    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="details_view__vertical_padding">16dp</dimen>
+    <dimen name="details_view_horizontal_padding">16dp</dimen>
+    <dimen name="details_tv_bottom_padding">16dp</dimen>
+    <dimen name="details_tv_label_bottom_padding">4dp</dimen>
+    <dimen name="details_subtitle_text_size">12sp</dimen>
+    <dimen name="details_body_text_size">16sp</dimen>
     <dimen name="img_sandwich_height">200dp</dimen>
     <dimen name="img_sandwich_padding">24dp</dimen>
 </resources>
