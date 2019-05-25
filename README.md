@@ -1,7 +1,7 @@
 # Sandwich Club Project
 
 ## Project Overview
-Sandwich Club app is part of Android developer Nanodegree Program
+The project is part and 1st project of Udacity Android Developer Nanodegree.
 
 ## Sandwich Club App
 Shows the details of each sandwich once it is selected.
